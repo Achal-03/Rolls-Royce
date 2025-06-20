@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rolls-Royce | The Epitome of Luxury</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav-container">
+    <div class="logo">
+      <img src="https://i.pinimg.com/736x/24/3d/53/243d53e70d87485eeb6ba64c9b280fed.jpg" alt="Rolls-Royce Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#" onclick="showSection('home')">Home</a></li>
+      <li><a href="#" onclick="showSection('about')">About Us</a></li>
+      <li class="dropdown">
+        <a href="#" onclick="showSection('models')">Models</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="page-section active">
+    <div class="hero">
+      <img src="https://images.lifestyleasia.com/wp-content/uploads/sites/7/2020/09/02191145/2021-rolls-royce-ghost-details.jpg?tr=w-1200,h-900" alt="Rolls-Royce Hero">
+      <div class="hero-content">
+        <h1>Rolls-Royce</h1>
+        <p>The Epitome of Luxury</p>
+        <button onclick="showSection('models')">Explore Models</button>
+      </div>
+    </div>
+    <div class="features">
+      <div class="feature-card">
+        <img src="https://www.vegasautogallery.com/imagetag/2536/2/l/Used-2022-Rolls-Royce-Cullinan-Base-1744750546.jpg" alt="Interior">
+        <h3>Opulent Interiors</h3>
+        <p>Handcrafted luxury for the discerning.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRklq2gps1Mf9WoCKWOyjOFcGFdlBwEzOR3neNiEMtC-tvYgs690-d1zDa1YVn3MV4zJuQ&usqp=CAU" alt="Engine">
+        <h3>Powerful Performance</h3>
+        <p>Unmatched engineering excellence.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://i.ytimg.com/vi/3U28TxwEn94/mqdefault.jpg" alt="Exterior">
+        <h3>Timeless Design</h3>
+        <p>Iconic presence on every road.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="page-section">
+    <div class="about-content">
+      <h2>About Rolls-Royce</h2>
+      <p>Rolls-Royce Motor Cars is a British luxury automobile maker. A wholly owned subsidiary of BMW AG, it is based in Goodwood, England. The company’s cars are synonymous with excellence, luxury, and a unique blend of engineering and artistry.</p>
+      <p>Every Rolls-Royce is hand-built to order, with each detail tailored to the owner’s desires. The result is not just a car, but a masterpiece.</p>
+      <button onclick="showSection('home')">Back to Home</button>
+    </div>
+  </section>
+
+  <!-- Models Section -->
+  <section id="models" class="page-section">
+    <h2 class="models-heading">Our Models</h2>
+    <div class="model-cards">
+      <div class="model-card" onclick="showSection('ghost')">
+        <img src="https://wallpapers.com/images/hd/rolls-royce-gold-and-white-nxydacgblfyw7n6i.jpg" alt="Rolls-Royce Ghost">
+        <h3>Ghost</h3>
+        <p>Ultimate in effortless luxury.</p>
+      </div>
+      <div class="model-card" onclick="showSection('phantom')">
+        <img src="https://c4.wallpaperflare.com/wallpaper/118/497/185/rolls-royce-rolls-royce-phantom-car-full-size-car-wallpaper-preview.jpg" alt="Rolls-Royce Phantom">
+        <h3>Phantom</h3>
+        <p>Iconic. Unmatched. Bespoke.</p>
+      </div>
+      <div class="model-card" onclick="showSection('cullinan')">
+        <img src="data:image/jpeg;base64,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" alt="Rolls-Royce Cullinan">
+        <h3>Cullinan</h3>
+        <p>Luxury redefined for every terrain.</p>
+      </div>
+    </div>
+    <button onclick="showSection('home')">Back to Home</button>
+  </section>
+
+  <!-- Ghost Section -->
+  <section id="ghost" class="page-section">
+    <div class="model-detail">
+      <img src="https://w0.peakpx.com/wallpaper/465/577/HD-wallpaper-rolls-royce-ghost-2021-2.jpg" alt="Rolls-Royce Ghost">
+      <div class="model-info">
+        <h2>Rolls-Royce Ghost</h2>
+        <ul>
+          <li><strong>Engine:</strong> 6.75L V12 Twin-Turbo</li>
+          <li><strong>Power:</strong> 563 hp</li>
+          <li><strong>0-60 mph:</strong> 4.6 seconds</li>
+          <li><strong>Top Speed:</strong> 155 mph (limited)</li>
+          <li><strong>Price:</strong> From $332,500</li>
+        </ul>
+        <button onclick="showSection('models')">Back to Models</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phantom Section -->
+  <section id="phantom" class="page-section">
+    <div class="model-detail">
+      <img src="https://i.ytimg.com/vi/BjqPGa7f6aw/maxresdefault.jpg" alt="Rolls-Royce Phantom">
+      <div class="model-info">
+        <h2>Rolls-Royce Phantom</h2>
+        <ul>
+          <li><strong>Engine:</strong> 6.75L V12 Twin-Turbo</li>
+          <li><strong>Power:</strong> 563 hp</li>
+          <li><strong>0-60 mph:</strong> 5.3 seconds</li>
+          <li><strong>Top Speed:</strong> 155 mph (limited)</li>
+          <li><strong>Price:</strong> From $460,000</li>
+        </ul>
+        <button onclick="showSection('models')">Back to Models</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cullinan Section -->
+  <section id="cullinan" class="page-section">
+    <div class="model-detail">
+      <img src="https://www.hdcarwallpapers.com/download/spofec_rolls_royce_cullinan_2020_4k_3-3840x2160.jpg" alt="Rolls-Royce Cullinan">
+      <div class="model-info">
+        <h2>Rolls-Royce Cullinan</h2>
+        <ul>
+          <li><strong>Engine:</strong> 6.75L V12 Twin-Turbo</li>
+          <li><strong>Power:</strong> 563 hp</li>
+          <li><strong>0-60 mph:</strong> 4.8 seconds</li>
+          <li><strong>Top Speed:</strong> 155 mph (limited)</li>
+          <li><strong>Price:</strong> From $341,000</li>
+        </ul>
+        <button onclick="showSection('models')">Back to Models</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rolls-Royce Motor Cars. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showSection(sectionId) {
+      document.querySelectorAll('.page-section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(sectionId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
